@@ -25,6 +25,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5BC12E9D18C2BFB200D73891 /* SelectionSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionSortStrategy.h; sourceTree = "<group>"; };
+		5BC12EA018C2BFC100D73891 /* SortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortStrategy.h; sourceTree = "<group>"; };
+		5BC12EA218C2C69F00D73891 /* BubbleSortStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleSortStrategy.h; sourceTree = "<group>"; };
 		5BD0735318C0F467002D3134 /* Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD0735618C0F467002D3134 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5BD0735818C0F467002D3134 /* Algorithms.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Algorithms.1; sourceTree = "<group>"; };
@@ -62,6 +65,9 @@
 			children = (
 				5BD0735618C0F467002D3134 /* main.cpp */,
 				5BD0735818C0F467002D3134 /* Algorithms.1 */,
+				5BC12EA018C2BFC100D73891 /* SortStrategy.h */,
+				5BC12E9D18C2BFB200D73891 /* SelectionSortStrategy.h */,
+				5BC12EA218C2C69F00D73891 /* BubbleSortStrategy.h */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -225,6 +231,7 @@
 				5BD0735E18C0F467002D3134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
