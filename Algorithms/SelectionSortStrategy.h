@@ -11,18 +11,21 @@
 
 #include <iostream>
 #include "SortStrategy.h"
+#include <string>
 
 class SelectionSortStrategy : public SortStrategy {
 public:
     
-    template <typename T> void sort(T* array, int lendata = 0) {
+    std::string methodName() {return "Selection Sort";}
+    //int methodName() {return 1;}
+
+    void sort(double* array, int lendata = 0); /*{
         for (int i = 0; i < lendata - 1; i++) {
             int min_ind = findMinIndex(array + i, lendata - i);
             swap(array, i, min_ind + i);
         }
-    }
+    };*/
 
-    
 private:
     template <typename T>
     void swap(T* array, int ind1, int ind2) {

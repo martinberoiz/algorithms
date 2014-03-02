@@ -10,10 +10,13 @@
 #define __Algorithms__SortStrategy__
 
 #include <iostream>
+#include <string>
 
 class SortStrategy {
 public:
-    template <typename T> void sort(T* array);
+    virtual std::string methodName() = 0;
+    virtual void sort(double* array, int len = 0) = 0;
+
 };
 
 #endif /* defined(__Algorithms__SortStrategy__) */

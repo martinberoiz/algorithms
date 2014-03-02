@@ -10,12 +10,16 @@
 #define Algorithms_BubbleSortStrategy_h
 
 #include "SortStrategy.h"
+#include <string>
 
 class BubbleSortStrategy : public SortStrategy {
 public:
-    template <typename T> void sort(T* array, int lendata = 0) {
+    std::string methodName() {return "Bubble Sort";}
+    //int methodName() {return 2;}
+
+    void sort(double* array, int len = 0);/* {
         bool swapflag = true;
-        for (int n = lendata; swapflag == true; n--) {
+        for (int n = len; swapflag == true; n--) {
             swapflag = false;
             for (int i = 0; i < n - 1; i++) {
                 if (array[i] > array[i + 1]) {
@@ -24,8 +28,10 @@ public:
                 }
             }
         }
-    }
+    }*/
     
+
+
 private:
     template <typename T>
     void swap(T* data, int ind1, int ind2) {
