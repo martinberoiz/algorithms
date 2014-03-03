@@ -12,10 +12,10 @@
 #include <iostream>
 #include <string>
 
-class SortStrategy {
+template <class T> class SortStrategy {
 public:
     virtual std::string methodName() = 0;
-    virtual void sort(double* array, int len = 0) = 0;
+    virtual void sort(T* array, int len = 0) = 0;
 
 };
 

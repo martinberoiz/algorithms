@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		5BD0735718C0F467002D3134 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0735618C0F467002D3134 /* main.cpp */; };
 		5BD0735918C0F467002D3134 /* Algorithms.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5BD0735818C0F467002D3134 /* Algorithms.1 */; };
-		5BF90C3B18C2E4FA006765A5 /* SelectionSortStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BF90C3918C2E4FA006765A5 /* SelectionSortStrategy.cpp */; };
-		5BF90C3D18C2E59B006765A5 /* BubbleSortStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BF90C3C18C2E59B006765A5 /* BubbleSortStrategy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -129,8 +127,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF90C3B18C2E4FA006765A5 /* SelectionSortStrategy.cpp in Sources */,
-				5BF90C3D18C2E59B006765A5 /* BubbleSortStrategy.cpp in Sources */,
 				5BD0735718C0F467002D3134 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

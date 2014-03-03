@@ -15,7 +15,7 @@
 using namespace std;
 
 template <typename T> void printArray(T* array, int len);
-template <typename T> void sorttest(T* array, int len, SortStrategy* strat);
+template <typename T> void sorttest(T* array, int len, SortStrategy<T>* strat);
 
 
 int main(int argc, const char * argv[])
@@ -41,15 +41,14 @@ int main(int argc, const char * argv[])
     printf("Original unsorted array: \n");
     printArray(data_dbl, lendata_dbl);
     printf("\n\n");
-    
 
-    vector<SortStrategy*>* allstrats = new vector<SortStrategy*>();
-    SelectionSortStrategy* sel = new SelectionSortStrategy();
+    vector< SortStrategy<double>* >* allstrats = new vector< SortStrategy<double>* >();
+    SelectionSortStrategy<double>* sel = new SelectionSortStrategy<double>();
     allstrats->push_back(sel);
-    BubbleSortStrategy* bbl = new BubbleSortStrategy();
+    BubbleSortStrategy<double>* bbl = new BubbleSortStrategy<double>();
     allstrats->push_back(bbl);
     
-    for (vector<SortStrategy*>::iterator aStrat = allstrats->begin();
+    for (vector<SortStrategy<double>*>::iterator aStrat = allstrats->begin();
          aStrat != allstrats->end();
          ++aStrat)
     {
@@ -62,7 +61,7 @@ int main(int argc, const char * argv[])
      return 0;
 }
 
-template <typename T> void sorttest(T* array, int len, SortStrategy* aStrat)
+template <typename T> void sorttest(T* array, int len, SortStrategy<T>* aStrat)
 {
     aStrat->sort(array, 10);
     
