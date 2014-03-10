@@ -1,5 +1,5 @@
 //
-//  SelectionSortStrategy.h
+//  SelectionSortStrategy.cpp
 //  Algorithms
 //
 //  Created by Martin Beroiz on 3/1/14.
@@ -7,7 +7,6 @@
 //
 
 
-#include "SelectionSortStrategy.h"
 
 template<class T> void SelectionSortStrategy<T>::sort(T* array, int len) {
     for (int i = 0; i < len - 1; i++) {

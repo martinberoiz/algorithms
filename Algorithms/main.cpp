@@ -10,12 +10,14 @@
 #include "SortStrategy.h"
 #include "SelectionSortStrategy.h"
 #include "BubbleSortStrategy.h"
+#include "InsertionSortStrategy.h"
 #include <vector>
 
 using namespace std;
 
 template <typename T> void printArray(T* array, int len);
-template <typename T> void sorttest(T* array, int len, SortStrategy<T>* strat);
+template <typename T> bool sorttest(T* array, int len, SortStrategy<T>* strat);
+template <typename T> void iterateOverStrats(T* data, int lendata);
 
 
 int main(int argc, const char * argv[])
@@ -35,45 +37,75 @@ int main(int argc, const char * argv[])
     }
     for (int i = 0; i < lendata_dbl; i++) data_dbl[i] /= randmax;
     
-    //int data_int[] = {4, 3, 7, 6, 1, 2, 10, 8, 5, 9};
-    //int lendata_int = 10;
-
-    printf("Original unsorted array: \n");
-    printArray(data_dbl, lendata_dbl);
-    printf("\n\n");
-
-    vector< SortStrategy<double>* >* allstrats = new vector< SortStrategy<double>* >();
-    SelectionSortStrategy<double>* sel = new SelectionSortStrategy<double>();
-    allstrats->push_back(sel);
-    BubbleSortStrategy<double>* bbl = new BubbleSortStrategy<double>();
-    allstrats->push_back(bbl);
     
-    for (vector<SortStrategy<double>*>::iterator aStrat = allstrats->begin();
-         aStrat != allstrats->end();
-         ++aStrat)
-    {
-        double* data_dbl_copy = (double*)malloc(lendata_dbl*sizeof(*data_dbl));
-        memcpy(data_dbl_copy, data_dbl, lendata_dbl*sizeof(*data_dbl));
-        sorttest(data_dbl_copy, lendata_dbl, *aStrat);
-        //sorttest(data_int, lendata_int, *aStrat);
-    }
+    iterateOverStrats(data_dbl, lendata_dbl);
     
-     return 0;
+    printf("\n--------------------\n");
+    printf("Now with int's...\n\n");
+    int data_int[] = {4, 3, 7, 6, 1, 2, 10, 8, 5, 9};
+    int lendata_int = 10;
+    
+    iterateOverStrats(data_int, lendata_int);
+    
+    return 0;
 }
 
-template <typename T> void sorttest(T* array, int len, SortStrategy<T>* aStrat)
+template <typename T>
+bool sorttest(T* array, int len, SortStrategy<T>* aStrat)
 {
     aStrat->sort(array, 10);
     
     cout << "After sorting with " << aStrat->methodName() << endl;
     printArray(array, len);
-    printf("\n");
+    
+    bool pass = true;
+    for (int i = 0; i < len - 1; i++) {
+        if (array[i] > array[i + 1]) {
+            pass = false;
+            break;
+        }
+    }
+    return pass;
+    
 }
 
 
-template <typename T> void printArray(T* array, int len)
+template <typename T>
+void printArray(T* array, int len)
 {
+    cout << "[";
     for (int i = 0; i < len - 1; i++) {cout << array[i] << ", ";}
-    cout << array[len - 1] << endl;
+    cout << array[len - 1] << "]" << endl;
 }
 
+
+template <typename T>
+void iterateOverStrats(T* array, int len)
+{
+    printf("Original unsorted array: \n");
+    printArray(array, len);
+    printf("\n\n");
+    
+    vector< SortStrategy<T>* >* allStrats = new vector< SortStrategy<T>* >();
+    SelectionSortStrategy<T>* sel = new SelectionSortStrategy<T>();
+    allStrats->push_back(sel);
+    BubbleSortStrategy<T>* bbl = new BubbleSortStrategy<T>();
+    allStrats->push_back(bbl);
+    InsertionSortStrategy<T>* insrt = new InsertionSortStrategy<T>();
+    allStrats->push_back(insrt);
+    
+    for (typename vector<SortStrategy<T>*>::iterator aStrat = allStrats->begin();
+         aStrat != allStrats->end();
+         ++aStrat)
+    {
+        T* data_copy = (T*)malloc(len*sizeof(*array));
+        memcpy(data_copy, array, len*sizeof(*array));
+        bool pass = sorttest(data_copy, len, *aStrat);
+        printf("Test%spassed.\n\n", pass ? " ": " not ");
+    }
+    delete sel;
+    delete bbl;
+    delete insrt;
+    delete allStrats;
+
+}

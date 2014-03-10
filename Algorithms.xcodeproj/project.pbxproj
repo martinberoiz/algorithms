@@ -7,11 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B49DFE018CE5CCE00DB9322 /* UnionFind.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5B49DFDF18CE5CCE00DB9322 /* UnionFind.1 */; };
+		5B49DFE618CE5D0D00DB9322 /* ufTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFE418CE5CF800DB9322 /* ufTest.cpp */; };
+		5B49DFEE18CE6F7B00DB9322 /* QuickFind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFE718CE5D6C00DB9322 /* QuickFind.cpp */; };
+		5B49DFEF18CE6F7E00DB9322 /* QuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFEB18CE69F700DB9322 /* QuickUnion.cpp */; };
 		5BD0735718C0F467002D3134 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0735618C0F467002D3134 /* main.cpp */; };
 		5BD0735918C0F467002D3134 /* Algorithms.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5BD0735818C0F467002D3134 /* Algorithms.1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5B49DFD918CE5CCE00DB9322 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				5B49DFE018CE5CCE00DB9322 /* UnionFind.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		5BD0735118C0F467002D3134 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -25,6 +39,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B49DFD518CE5BEE00DB9322 /* UnionFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnionFind.h; sourceTree = "<group>"; };
+		5B49DFDB18CE5CCE00DB9322 /* UnionFind */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnionFind; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B49DFDD18CE5CCE00DB9322 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5B49DFDF18CE5CCE00DB9322 /* UnionFind.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = UnionFind.1; sourceTree = "<group>"; };
+		5B49DFE418CE5CF800DB9322 /* ufTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ufTest.cpp; sourceTree = "<group>"; };
+		5B49DFE718CE5D6C00DB9322 /* QuickFind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickFind.cpp; sourceTree = "<group>"; };
+		5B49DFE818CE5D6C00DB9322 /* QuickFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickFind.h; sourceTree = "<group>"; };
+		5B49DFEB18CE69F700DB9322 /* QuickUnion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUnion.cpp; sourceTree = "<group>"; };
+		5B49DFEC18CE69F700DB9322 /* QuickUnion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickUnion.h; sourceTree = "<group>"; };
+		5B8698AD18CA3B6900682AF4 /* InsertionSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsertionSortStrategy.cpp; sourceTree = "<group>"; };
+		5B8698AE18CA3B6900682AF4 /* InsertionSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertionSortStrategy.h; sourceTree = "<group>"; };
 		5BC12E9D18C2BFB200D73891 /* SelectionSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionSortStrategy.h; sourceTree = "<group>"; };
 		5BC12EA018C2BFC100D73891 /* SortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortStrategy.h; sourceTree = "<group>"; };
 		5BC12EA218C2C69F00D73891 /* BubbleSortStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleSortStrategy.h; sourceTree = "<group>"; };
@@ -36,6 +61,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5B49DFD818CE5CCE00DB9322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BD0735018C0F467002D3134 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,10 +78,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B49DFD318CE5BD100DB9322 /* Union Find */ = {
+			isa = PBXGroup;
+			children = (
+				5B49DFE418CE5CF800DB9322 /* ufTest.cpp */,
+				5B49DFD518CE5BEE00DB9322 /* UnionFind.h */,
+				5B49DFE818CE5D6C00DB9322 /* QuickFind.h */,
+				5B49DFE718CE5D6C00DB9322 /* QuickFind.cpp */,
+				5B49DFEC18CE69F700DB9322 /* QuickUnion.h */,
+				5B49DFEB18CE69F700DB9322 /* QuickUnion.cpp */,
+			);
+			name = "Union Find";
+			sourceTree = "<group>";
+		};
+		5B49DFDC18CE5CCE00DB9322 /* UnionFind */ = {
+			isa = PBXGroup;
+			children = (
+				5B49DFDD18CE5CCE00DB9322 /* main.cpp */,
+				5B49DFDF18CE5CCE00DB9322 /* UnionFind.1 */,
+			);
+			path = UnionFind;
+			sourceTree = "<group>";
+		};
 		5BD0734A18C0F467002D3134 = {
 			isa = PBXGroup;
 			children = (
 				5BD0735518C0F467002D3134 /* Algorithms */,
+				5B49DFDC18CE5CCE00DB9322 /* UnionFind */,
 				5BD0735418C0F467002D3134 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				5BD0735318C0F467002D3134 /* Algorithms */,
+				5B49DFDB18CE5CCE00DB9322 /* UnionFind */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +121,7 @@
 		5BD0735518C0F467002D3134 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				5B49DFD318CE5BD100DB9322 /* Union Find */,
 				5BD0735618C0F467002D3134 /* main.cpp */,
 				5BD0735818C0F467002D3134 /* Algorithms.1 */,
 				5BC12EA018C2BFC100D73891 /* SortStrategy.h */,
@@ -72,6 +129,8 @@
 				5BF90C3918C2E4FA006765A5 /* SelectionSortStrategy.cpp */,
 				5BC12EA218C2C69F00D73891 /* BubbleSortStrategy.h */,
 				5BF90C3C18C2E59B006765A5 /* BubbleSortStrategy.cpp */,
+				5B8698AE18CA3B6900682AF4 /* InsertionSortStrategy.h */,
+				5B8698AD18CA3B6900682AF4 /* InsertionSortStrategy.cpp */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -79,6 +138,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5B49DFDA18CE5CCE00DB9322 /* UnionFind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B49DFE118CE5CCE00DB9322 /* Build configuration list for PBXNativeTarget "UnionFind" */;
+			buildPhases = (
+				5B49DFD718CE5CCE00DB9322 /* Sources */,
+				5B49DFD818CE5CCE00DB9322 /* Frameworks */,
+				5B49DFD918CE5CCE00DB9322 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnionFind;
+			productName = UnionFind;
+			productReference = 5B49DFDB18CE5CCE00DB9322 /* UnionFind */;
+			productType = "com.apple.product-type.tool";
+		};
 		5BD0735218C0F467002D3134 /* Algorithms */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BD0735C18C0F467002D3134 /* Build configuration list for PBXNativeTarget "Algorithms" */;
@@ -118,11 +194,22 @@
 			projectRoot = "";
 			targets = (
 				5BD0735218C0F467002D3134 /* Algorithms */,
+				5B49DFDA18CE5CCE00DB9322 /* UnionFind */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B49DFD718CE5CCE00DB9322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B49DFEE18CE6F7B00DB9322 /* QuickFind.cpp in Sources */,
+				5B49DFE618CE5D0D00DB9322 /* ufTest.cpp in Sources */,
+				5B49DFEF18CE6F7E00DB9322 /* QuickUnion.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BD0734F18C0F467002D3134 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +221,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		5B49DFE218CE5CCE00DB9322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5B49DFE318CE5CCE00DB9322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		5BD0735A18C0F467002D3134 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -219,6 +324,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B49DFE118CE5CCE00DB9322 /* Build configuration list for PBXNativeTarget "UnionFind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B49DFE218CE5CCE00DB9322 /* Debug */,
+				5B49DFE318CE5CCE00DB9322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5BD0734E18C0F467002D3134 /* Build configuration list for PBXProject "Algorithms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

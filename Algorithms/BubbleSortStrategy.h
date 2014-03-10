@@ -14,7 +14,7 @@
 
 template <class T> class BubbleSortStrategy : public SortStrategy<T> {
 public:
-    std::string methodName() {return "Bubble Sort";}
+    std::string methodName() {return std::string("Bubble Sort");}
     void sort(T* array, int len = 0);
 
 private:

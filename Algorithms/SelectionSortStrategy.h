@@ -15,7 +15,7 @@
 
 template <class T> class SelectionSortStrategy : public SortStrategy<T> {
 public:
-    std::string methodName() {return "Selection Sort";}
+    std::string methodName() {return std::string("Selection Sort");}
     void sort(T* array, int lendata = 0);
 
 private:
