@@ -10,6 +10,7 @@
 #include "UnionFind.h"
 #include "QuickFind.h"
 #include "QuickUnion.h"
+#include "WeightedQuickUnion.h"
 
 using namespace std;
 
@@ -22,6 +23,9 @@ int main() {
     
     QuickUnion qu(10);
     testUnionFind(qu);
+    
+    WeightedQuickUnion wqu(10);
+    testUnionFind(wqu);
     
     return 0;
 }
@@ -45,7 +49,7 @@ bool testUnionFind(UnionFind &uf) {
     
     pass = pass && (uf.isConnected(0, 9));
 
-    printf("Test%spassed.\n", pass ? " ": " not ");
+    printf("Test for %s%spassed.\n", uf.methodName().c_str(), pass ? " ": " not ");
 
     return pass;
 }

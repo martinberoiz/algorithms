@@ -25,7 +25,7 @@ public:
     bool isConnected(int p, int q);
     
 private:
-    vector<int>& id;
+    vector<int>& prnt;  //vector of parents in tree.
     int root(int p);
 };
 

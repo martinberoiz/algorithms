@@ -8,18 +8,18 @@
 
 #include "QuickUnion.h"
 
-QuickUnion::QuickUnion(int numberOfNodes) : id(*new vector<int>(numberOfNodes)) {
+QuickUnion::QuickUnion(int numberOfNodes) : prnt(*new vector<int>(numberOfNodes)) {
     for (int i = 0; i < numberOfNodes; i++) {
-        id[i] = i;
+        prnt[i] = i;
     }
 }
 
 QuickUnion::~QuickUnion() {
-    delete &id;
+    delete &prnt;
 }
 
 void QuickUnion::connect(int p, int q) {
-    id[root(p)] = root(q);
+    prnt[root(p)] = root(q);
 }
 
 bool QuickUnion::isConnected(int p, int q) {
@@ -27,7 +27,7 @@ bool QuickUnion::isConnected(int p, int q) {
 }
 
 int QuickUnion::root(int p) {
-    while (p != id[p]) {p = id[p];}
+    while (p != prnt[p]) {p = prnt[p];}
     return p;
 }
 

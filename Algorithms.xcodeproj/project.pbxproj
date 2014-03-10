@@ -11,6 +11,7 @@
 		5B49DFE618CE5D0D00DB9322 /* ufTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFE418CE5CF800DB9322 /* ufTest.cpp */; };
 		5B49DFEE18CE6F7B00DB9322 /* QuickFind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFE718CE5D6C00DB9322 /* QuickFind.cpp */; };
 		5B49DFEF18CE6F7E00DB9322 /* QuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFEB18CE69F700DB9322 /* QuickUnion.cpp */; };
+		5B49DFF618CE77DC00DB9322 /* WeightedQuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */; };
 		5BD0735718C0F467002D3134 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0735618C0F467002D3134 /* main.cpp */; };
 		5BD0735918C0F467002D3134 /* Algorithms.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5BD0735818C0F467002D3134 /* Algorithms.1 */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,8 @@
 		5B49DFE818CE5D6C00DB9322 /* QuickFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickFind.h; sourceTree = "<group>"; };
 		5B49DFEB18CE69F700DB9322 /* QuickUnion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUnion.cpp; sourceTree = "<group>"; };
 		5B49DFEC18CE69F700DB9322 /* QuickUnion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickUnion.h; sourceTree = "<group>"; };
+		5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WeightedQuickUnion.cpp; sourceTree = "<group>"; };
+		5B49DFF418CE776900DB9322 /* WeightedQuickUnion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightedQuickUnion.h; sourceTree = "<group>"; };
 		5B8698AD18CA3B6900682AF4 /* InsertionSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsertionSortStrategy.cpp; sourceTree = "<group>"; };
 		5B8698AE18CA3B6900682AF4 /* InsertionSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertionSortStrategy.h; sourceTree = "<group>"; };
 		5BC12E9D18C2BFB200D73891 /* SelectionSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionSortStrategy.h; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				5B49DFE718CE5D6C00DB9322 /* QuickFind.cpp */,
 				5B49DFEC18CE69F700DB9322 /* QuickUnion.h */,
 				5B49DFEB18CE69F700DB9322 /* QuickUnion.cpp */,
+				5B49DFF418CE776900DB9322 /* WeightedQuickUnion.h */,
+				5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */,
 			);
 			name = "Union Find";
 			sourceTree = "<group>";
@@ -205,8 +210,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B49DFEE18CE6F7B00DB9322 /* QuickFind.cpp in Sources */,
-				5B49DFE618CE5D0D00DB9322 /* ufTest.cpp in Sources */,
+				5B49DFF618CE77DC00DB9322 /* WeightedQuickUnion.cpp in Sources */,
 				5B49DFEF18CE6F7E00DB9322 /* QuickUnion.cpp in Sources */,
+				5B49DFE618CE5D0D00DB9322 /* ufTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +337,7 @@
 				5B49DFE318CE5CCE00DB9322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BD0734E18C0F467002D3134 /* Build configuration list for PBXProject "Algorithms" */ = {
 			isa = XCConfigurationList;
