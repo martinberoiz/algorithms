@@ -14,6 +14,9 @@
 		5B49DFF618CE77DC00DB9322 /* WeightedQuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */; };
 		5BD0735718C0F467002D3134 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0735618C0F467002D3134 /* main.cpp */; };
 		5BD0735918C0F467002D3134 /* Algorithms.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5BD0735818C0F467002D3134 /* Algorithms.1 */; };
+		5BF9368818CE8391007DB349 /* Percolation.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5BF9368718CE8391007DB349 /* Percolation.1 */; };
+		5BF9368C18CE83A2007DB349 /* percolation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BF9367D18CE8379007DB349 /* percolation.cpp */; };
+		5BF9368D18CE8461007DB349 /* WeightedQuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,13 +40,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		5BF9368118CE8391007DB349 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				5BF9368818CE8391007DB349 /* Percolation.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5B49DFD518CE5BEE00DB9322 /* UnionFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnionFind.h; sourceTree = "<group>"; };
 		5B49DFDB18CE5CCE00DB9322 /* UnionFind */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnionFind; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B49DFDD18CE5CCE00DB9322 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		5B49DFDF18CE5CCE00DB9322 /* UnionFind.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = UnionFind.1; sourceTree = "<group>"; };
+		5B49DFDF18CE5CCE00DB9322 /* UnionFind.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = UnionFind.1; path = ../UnionFind/UnionFind.1; sourceTree = "<group>"; };
 		5B49DFE418CE5CF800DB9322 /* ufTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ufTest.cpp; sourceTree = "<group>"; };
 		5B49DFE718CE5D6C00DB9322 /* QuickFind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickFind.cpp; sourceTree = "<group>"; };
 		5B49DFE818CE5D6C00DB9322 /* QuickFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickFind.h; sourceTree = "<group>"; };
@@ -61,6 +73,9 @@
 		5BD0735818C0F467002D3134 /* Algorithms.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Algorithms.1; sourceTree = "<group>"; };
 		5BF90C3918C2E4FA006765A5 /* SelectionSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectionSortStrategy.cpp; sourceTree = "<group>"; };
 		5BF90C3C18C2E59B006765A5 /* BubbleSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BubbleSortStrategy.cpp; sourceTree = "<group>"; };
+		5BF9367D18CE8379007DB349 /* percolation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = percolation.cpp; path = ../Algorithms/percolation.cpp; sourceTree = "<group>"; };
+		5BF9368318CE8391007DB349 /* Percolation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Percolation; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF9368718CE8391007DB349 /* Percolation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Percolation.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +93,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5BF9368018CE8391007DB349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				5B49DFE418CE5CF800DB9322 /* ufTest.cpp */,
+				5B49DFDF18CE5CCE00DB9322 /* UnionFind.1 */,
 				5B49DFD518CE5BEE00DB9322 /* UnionFind.h */,
 				5B49DFE818CE5D6C00DB9322 /* QuickFind.h */,
 				5B49DFE718CE5D6C00DB9322 /* QuickFind.cpp */,
@@ -92,24 +115,15 @@
 				5B49DFEB18CE69F700DB9322 /* QuickUnion.cpp */,
 				5B49DFF418CE776900DB9322 /* WeightedQuickUnion.h */,
 				5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */,
+				5BF9368418CE8391007DB349 /* Percolation */,
 			);
 			name = "Union Find";
-			sourceTree = "<group>";
-		};
-		5B49DFDC18CE5CCE00DB9322 /* UnionFind */ = {
-			isa = PBXGroup;
-			children = (
-				5B49DFDD18CE5CCE00DB9322 /* main.cpp */,
-				5B49DFDF18CE5CCE00DB9322 /* UnionFind.1 */,
-			);
-			path = UnionFind;
 			sourceTree = "<group>";
 		};
 		5BD0734A18C0F467002D3134 = {
 			isa = PBXGroup;
 			children = (
 				5BD0735518C0F467002D3134 /* Algorithms */,
-				5B49DFDC18CE5CCE00DB9322 /* UnionFind */,
 				5BD0735418C0F467002D3134 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +133,7 @@
 			children = (
 				5BD0735318C0F467002D3134 /* Algorithms */,
 				5B49DFDB18CE5CCE00DB9322 /* UnionFind */,
+				5BF9368318CE8391007DB349 /* Percolation */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +153,16 @@
 				5B8698AD18CA3B6900682AF4 /* InsertionSortStrategy.cpp */,
 			);
 			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		5BF9368418CE8391007DB349 /* Percolation */ = {
+			isa = PBXGroup;
+			children = (
+				5BF9367D18CE8379007DB349 /* percolation.cpp */,
+				5BF9368718CE8391007DB349 /* Percolation.1 */,
+			);
+			name = Percolation;
+			path = ../Percolation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +202,23 @@
 			productReference = 5BD0735318C0F467002D3134 /* Algorithms */;
 			productType = "com.apple.product-type.tool";
 		};
+		5BF9368218CE8391007DB349 /* Percolation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF9368918CE8391007DB349 /* Build configuration list for PBXNativeTarget "Percolation" */;
+			buildPhases = (
+				5BF9367F18CE8391007DB349 /* Sources */,
+				5BF9368018CE8391007DB349 /* Frameworks */,
+				5BF9368118CE8391007DB349 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Percolation;
+			productName = Percolation;
+			productReference = 5BF9368318CE8391007DB349 /* Percolation */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,6 +242,7 @@
 			targets = (
 				5BD0735218C0F467002D3134 /* Algorithms */,
 				5B49DFDA18CE5CCE00DB9322 /* UnionFind */,
+				5BF9368218CE8391007DB349 /* Percolation */,
 			);
 		};
 /* End PBXProject section */
@@ -221,6 +264,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD0735718C0F467002D3134 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BF9367F18CE8391007DB349 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF9368C18CE83A2007DB349 /* percolation.cpp in Sources */,
+				5BF9368D18CE8461007DB349 /* WeightedQuickUnion.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +379,24 @@
 			};
 			name = Release;
 		};
+		5BF9368A18CE8391007DB349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5BF9368B18CE8391007DB349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -356,6 +426,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5BF9368918CE8391007DB349 /* Build configuration list for PBXNativeTarget "Percolation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF9368A18CE8391007DB349 /* Debug */,
+				5BF9368B18CE8391007DB349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

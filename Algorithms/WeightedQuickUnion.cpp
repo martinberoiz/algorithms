@@ -41,7 +41,10 @@ bool WeightedQuickUnion::isConnected(int p, int q) {
 }
 
 int WeightedQuickUnion::root(int p) {
-    while (p != prnt[p]) {p = prnt[p];}
+    while (p != prnt[p]) {
+        prnt[p] = prnt[prnt[p]]; //This flattens the tree even further
+        p = prnt[p];
+    }
     return p;
 }
 
