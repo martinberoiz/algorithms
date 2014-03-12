@@ -12,12 +12,22 @@
 		<key>Percolation.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
+		</dict>
+		<key>PercolationGUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>PercolationGUITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>UnionFind.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -33,6 +43,16 @@
 			<true/>
 		</dict>
 		<key>5BF9368218CE8391007DB349</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5BF9369118CE9BB3007DB349</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5BF936B118CE9BB3007DB349</key>
 		<dict>
 			<key>primary</key>
 			<true/>
