@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B22106418D10C6C0098B105 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B22106318D10C6C0098B105 /* AppIcon.png */; };
 		5B49DFE018CE5CCE00DB9322 /* UnionFind.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5B49DFDF18CE5CCE00DB9322 /* UnionFind.1 */; };
 		5B49DFE618CE5D0D00DB9322 /* ufTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFE418CE5CF800DB9322 /* ufTest.cpp */; };
 		5B49DFEE18CE6F7B00DB9322 /* QuickFind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFE718CE5D6C00DB9322 /* QuickFind.cpp */; };
@@ -25,23 +26,9 @@
 		5BF936A818CE9BB3007DB349 /* PRCAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5BF936A718CE9BB3007DB349 /* PRCAppDelegate.mm */; };
 		5BF936AB18CE9BB3007DB349 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF936A918CE9BB3007DB349 /* MainMenu.xib */; };
 		5BF936AD18CE9BB3007DB349 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF936AC18CE9BB3007DB349 /* Images.xcassets */; };
-		5BF936B418CE9BB4007DB349 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF936B318CE9BB3007DB349 /* XCTest.framework */; };
-		5BF936B518CE9BB4007DB349 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF9369418CE9BB3007DB349 /* Cocoa.framework */; };
-		5BF936BD18CE9BB4007DB349 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BF936BB18CE9BB4007DB349 /* InfoPlist.strings */; };
-		5BF936BF18CE9BB4007DB349 /* PercolationGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF936BE18CE9BB4007DB349 /* PercolationGUITests.m */; };
 		5BF936C818CE9C0D007DB349 /* PRCGrid.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5BF936C718CE9C0D007DB349 /* PRCGrid.mm */; };
 		5BF936C918CE9E72007DB349 /* WeightedQuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5BF936B618CE9BB4007DB349 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BD0734B18C0F467002D3134 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BF9369118CE9BB3007DB349;
-			remoteInfo = PercolationGUI;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5B49DFD918CE5CCE00DB9322 /* CopyFiles */ = {
@@ -77,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B22106318D10C6C0098B105 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		5B49DFD518CE5BEE00DB9322 /* UnionFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnionFind.h; sourceTree = "<group>"; };
 		5B49DFDB18CE5CCE00DB9322 /* UnionFind */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnionFind; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B49DFDF18CE5CCE00DB9322 /* UnionFind.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = UnionFind.1; path = ../UnionFind/UnionFind.1; sourceTree = "<group>"; };
@@ -102,7 +90,7 @@
 		5BF9367D18CE8379007DB349 /* percolation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = percolation.cpp; path = ../Algorithms/percolation.cpp; sourceTree = "<group>"; };
 		5BF9368318CE8391007DB349 /* Percolation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Percolation; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF9368718CE8391007DB349 /* Percolation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Percolation.1; sourceTree = "<group>"; };
-		5BF9369218CE9BB3007DB349 /* PercolationGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PercolationGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF9369218CE9BB3007DB349 /* Percolation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Percolation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF9369418CE9BB3007DB349 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5BF9369718CE9BB3007DB349 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		5BF9369818CE9BB3007DB349 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -116,11 +104,7 @@
 		5BF936A718CE9BB3007DB349 /* PRCAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PRCAppDelegate.mm; sourceTree = "<group>"; };
 		5BF936AA18CE9BB3007DB349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5BF936AC18CE9BB3007DB349 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5BF936B218CE9BB3007DB349 /* PercolationGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PercolationGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF936B318CE9BB3007DB349 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5BF936BA18CE9BB4007DB349 /* PercolationGUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PercolationGUITests-Info.plist"; sourceTree = "<group>"; };
-		5BF936BC18CE9BB4007DB349 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5BF936BE18CE9BB4007DB349 /* PercolationGUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PercolationGUITests.m; sourceTree = "<group>"; };
 		5BF936C618CE9C0D007DB349 /* PRCGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRCGrid.h; sourceTree = "<group>"; };
 		5BF936C718CE9C0D007DB349 /* PRCGrid.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PRCGrid.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,15 +139,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BF936AF18CE9BB3007DB349 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5BF936B518CE9BB4007DB349 /* Cocoa.framework in Frameworks */,
-				5BF936B418CE9BB4007DB349 /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -189,7 +164,6 @@
 			children = (
 				5BD0735518C0F467002D3134 /* Algorithms */,
 				5BF9369A18CE9BB3007DB349 /* PercolationGUI */,
-				5BF936B818CE9BB4007DB349 /* PercolationGUITests */,
 				5BF9369318CE9BB3007DB349 /* Frameworks */,
 				5BD0735418C0F467002D3134 /* Products */,
 			);
@@ -201,8 +175,7 @@
 				5BD0735318C0F467002D3134 /* Algorithms */,
 				5B49DFDB18CE5CCE00DB9322 /* UnionFind */,
 				5BF9368318CE8391007DB349 /* Percolation */,
-				5BF9369218CE9BB3007DB349 /* PercolationGUI.app */,
-				5BF936B218CE9BB3007DB349 /* PercolationGUITests.xctest */,
+				5BF9369218CE9BB3007DB349 /* Percolation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,29 +246,12 @@
 		5BF9369B18CE9BB3007DB349 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5B22106318D10C6C0098B105 /* AppIcon.png */,
 				5BF9369C18CE9BB3007DB349 /* PercolationGUI-Info.plist */,
 				5BF9369D18CE9BB3007DB349 /* InfoPlist.strings */,
 				5BF936A018CE9BB3007DB349 /* main.m */,
 				5BF936A218CE9BB3007DB349 /* PercolationGUI-Prefix.pch */,
 				5BF936A318CE9BB3007DB349 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5BF936B818CE9BB4007DB349 /* PercolationGUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5BF936BE18CE9BB4007DB349 /* PercolationGUITests.m */,
-				5BF936B918CE9BB4007DB349 /* Supporting Files */,
-			);
-			path = PercolationGUITests;
-			sourceTree = "<group>";
-		};
-		5BF936B918CE9BB4007DB349 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5BF936BA18CE9BB4007DB349 /* PercolationGUITests-Info.plist */,
-				5BF936BB18CE9BB4007DB349 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -368,26 +324,8 @@
 			);
 			name = PercolationGUI;
 			productName = PercolationGUI;
-			productReference = 5BF9369218CE9BB3007DB349 /* PercolationGUI.app */;
+			productReference = 5BF9369218CE9BB3007DB349 /* Percolation.app */;
 			productType = "com.apple.product-type.application";
-		};
-		5BF936B118CE9BB3007DB349 /* PercolationGUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5BF936C318CE9BB4007DB349 /* Build configuration list for PBXNativeTarget "PercolationGUITests" */;
-			buildPhases = (
-				5BF936AE18CE9BB3007DB349 /* Sources */,
-				5BF936AF18CE9BB3007DB349 /* Frameworks */,
-				5BF936B018CE9BB3007DB349 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5BF936B718CE9BB4007DB349 /* PBXTargetDependency */,
-			);
-			name = PercolationGUITests;
-			productName = PercolationGUITests;
-			productReference = 5BF936B218CE9BB3007DB349 /* PercolationGUITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -397,11 +335,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = CGWA;
-				TargetAttributes = {
-					5BF936B118CE9BB3007DB349 = {
-						TestTargetID = 5BF9369118CE9BB3007DB349;
-					};
-				};
 			};
 			buildConfigurationList = 5BD0734E18C0F467002D3134 /* Build configuration list for PBXProject "Algorithms" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -420,7 +353,6 @@
 				5B49DFDA18CE5CCE00DB9322 /* UnionFind */,
 				5BF9368218CE8391007DB349 /* Percolation */,
 				5BF9369118CE9BB3007DB349 /* PercolationGUI */,
-				5BF936B118CE9BB3007DB349 /* PercolationGUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -430,18 +362,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B22106418D10C6C0098B105 /* AppIcon.png in Resources */,
 				5BF9369F18CE9BB3007DB349 /* InfoPlist.strings in Resources */,
 				5BF936AD18CE9BB3007DB349 /* Images.xcassets in Resources */,
 				5BF936A518CE9BB3007DB349 /* Credits.rtf in Resources */,
 				5BF936AB18CE9BB3007DB349 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BF936B018CE9BB3007DB349 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5BF936BD18CE9BB4007DB349 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,23 +413,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BF936AE18CE9BB3007DB349 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5BF936BF18CE9BB4007DB349 /* PercolationGUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5BF936B718CE9BB4007DB349 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5BF9369118CE9BB3007DB349 /* PercolationGUI */;
-			targetProxy = 5BF936B618CE9BB4007DB349 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5BF9369D18CE9BB3007DB349 /* InfoPlist.strings */ = {
@@ -529,14 +438,6 @@
 				5BF936AA18CE9BB3007DB349 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		5BF936BB18CE9BB4007DB349 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5BF936BC18CE9BB4007DB349 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -665,6 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PercolationGUI/PercolationGUI-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -672,7 +574,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "PercolationGUI/PercolationGUI-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Percolation;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -682,51 +584,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PercolationGUI/PercolationGUI-Prefix.pch";
 				INFOPLIST_FILE = "PercolationGUI/PercolationGUI-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Percolation;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		5BF936C418CE9BB4007DB349 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PercolationGUI.app/Contents/MacOS/PercolationGUI";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PercolationGUI/PercolationGUI-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "PercolationGUITests/PercolationGUITests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		5BF936C518CE9BB4007DB349 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PercolationGUI.app/Contents/MacOS/PercolationGUI";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PercolationGUI/PercolationGUI-Prefix.pch";
-				INFOPLIST_FILE = "PercolationGUITests/PercolationGUITests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -774,15 +637,6 @@
 			buildConfigurations = (
 				5BF936C118CE9BB4007DB349 /* Debug */,
 				5BF936C218CE9BB4007DB349 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5BF936C318CE9BB4007DB349 /* Build configuration list for PBXNativeTarget "PercolationGUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5BF936C418CE9BB4007DB349 /* Debug */,
-				5BF936C518CE9BB4007DB349 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

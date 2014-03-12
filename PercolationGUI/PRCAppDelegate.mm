@@ -25,10 +25,13 @@
     [theView setNeedsDisplay:YES];
     
     allSites = NULL;
+    
+    isAnimating = NO;
 }
 
 -(void)setGridSide:(int)newGridSide {
     if (gridSide == newGridSide) return;
+    
     gridSide = newGridSide;
     grid = NULL;
     [theView setGrid:NULL];
@@ -37,30 +40,46 @@
     
     [percolateTimer invalidate];
     percolateTimer = nil;
+    percGrid = nil;
+    [startButton setTitle:@"Start Percolation"];
+
+    
 }
 
 -(void)initPercolation:(id)sender {
-    percGrid = [[PRCGrid alloc] init];
-    [percGrid setGridSide:gridSide];
-    grid = [percGrid grid];
-    [theView setGrid:grid];
-    [theView setNeedsDisplay:YES];
     
-    //Initiate the timer:
-    [percolateTimer invalidate];
-    NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval: 0.1
-                                                      target: self
-                                                    selector: @selector(openASite:)
-                                                    userInfo: nil
-                                                     repeats: YES];
-    percolateTimer = timer;
-    
-    //Set up the random grid sites
-    int gridsz = gridSide * gridSide;
-    if (allSites != NULL) free(allSites);
-    allSites = (int *)malloc(gridsz*sizeof(*allSites));
-    for (int i = 0; i < gridsz; i++) allSites[i] = i;
-    lastUsed = 0;
+    if (isAnimating) {
+        
+        [startButton setTitle:@"Resume Percolation"];
+        [percolateTimer invalidate];
+        isAnimating = NO;
+        
+    } else {
+        
+        [startButton setTitle:@"Pause Percolation"];
+        if (!percGrid) {
+            percGrid = [[PRCGrid alloc] init];
+            [percGrid setGridSide:gridSide];
+            grid = [percGrid grid];
+            [theView setGrid:grid];
+            [theView setNeedsDisplay:YES];
+            //Set up the random grid sites
+            int gridsz = gridSide * gridSide;
+            if (allSites != NULL) free(allSites);
+            allSites = (int *)malloc(gridsz*sizeof(*allSites));
+            for (int i = 0; i < gridsz; i++) allSites[i] = i;
+            lastUsed = 0;
+        }
+        
+        //Initiate the animation:
+        isAnimating = YES;
+        [percolateTimer invalidate];
+        percolateTimer = [NSTimer scheduledTimerWithTimeInterval: 0.1
+                                                          target: self
+                                                        selector: @selector(openASite:)
+                                                        userInfo: nil
+                                                         repeats: YES];
+    }
     
 }
 
@@ -76,6 +95,10 @@
     if ([percGrid didPercolate]) {
         [percolateTimer invalidate];
         percolateTimer = nil;
+        percGrid = nil;
+        isAnimating = NO;
+        [startButton setTitle:@"Restart Percolation"];
+
     }
 }
 

@@ -17,7 +17,8 @@
     int gridSide;
     int *allSites;
     int lastUsed;
-    //NSTimer* percolateTimer; // I probably won't need this reference!
+    bool isAnimating;
+    IBOutlet NSButton* startButton;
 }
 
 @property (assign) IBOutlet NSWindow *window;
