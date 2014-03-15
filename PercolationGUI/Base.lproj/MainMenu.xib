@@ -728,6 +728,14 @@
                                                         <binding destination="494" name="value" keyPath="gridSide" id="3Lp-M7-2CP"/>
                                                     </connections>
                                                 </textField>
+                                                <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eFl-sr-1VC">
+                                                    <rect key="frame" x="310" y="52" width="28" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="50" doubleValue="10" tickMarkPosition="above" allowsTickMarkValuesOnly="YES" sliderType="circular" id="jxC-WL-5fi"/>
+                                                    <connections>
+                                                        <binding destination="494" name="value" keyPath="animationSpeed" id="hfW-hV-GDr"/>
+                                                    </connections>
+                                                </slider>
                                             </subviews>
                                         </view>
                                         <constraints>

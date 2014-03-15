@@ -27,6 +27,7 @@
     allSites = NULL;
     
     isAnimating = NO;
+    animationSpeed = 10;
 }
 
 -(void)setGridSide:(int)newGridSide {
@@ -44,6 +45,20 @@
     [startButton setTitle:@"Start Percolation"];
 
     
+}
+
+
+-(void)setAnimationSpeed:(double)newSpeed {
+    if (animationSpeed == newSpeed) return;
+    animationSpeed = newSpeed;
+    if (isAnimating) {
+        [percolateTimer invalidate];
+        percolateTimer = [NSTimer scheduledTimerWithTimeInterval: 1./animationSpeed
+                                                          target: self
+                                                        selector: @selector(openASite:)
+                                                        userInfo: nil
+                                                         repeats: YES];
+    }
 }
 
 -(void)initPercolation:(id)sender {
@@ -74,7 +89,7 @@
         //Initiate the animation:
         isAnimating = YES;
         [percolateTimer invalidate];
-        percolateTimer = [NSTimer scheduledTimerWithTimeInterval: 0.1
+        percolateTimer = [NSTimer scheduledTimerWithTimeInterval: 1./animationSpeed
                                                           target: self
                                                         selector: @selector(openASite:)
                                                         userInfo: nil
@@ -82,6 +97,8 @@
     }
     
 }
+
+
 
 -(void)openASite:(NSTimer*)theTimer {
     

@@ -19,6 +19,7 @@
     int lastUsed;
     bool isAnimating;
     IBOutlet NSButton* startButton;
+    double animationSpeed;
 }
 
 @property (assign) IBOutlet NSWindow *window;
