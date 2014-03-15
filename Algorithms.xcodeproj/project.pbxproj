@@ -13,6 +13,7 @@
 		5B49DFEE18CE6F7B00DB9322 /* QuickFind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFE718CE5D6C00DB9322 /* QuickFind.cpp */; };
 		5B49DFEF18CE6F7E00DB9322 /* QuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFEB18CE69F700DB9322 /* QuickUnion.cpp */; };
 		5B49DFF618CE77DC00DB9322 /* WeightedQuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */; };
+		5BBBCC8018D4CC9E00598800 /* pour.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5BBBCC7F18D4CC9D00598800 /* pour.m4a */; };
 		5BD0735718C0F467002D3134 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0735618C0F467002D3134 /* main.cpp */; };
 		5BD0735918C0F467002D3134 /* Algorithms.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5BD0735818C0F467002D3134 /* Algorithms.1 */; };
 		5BDFAE0E18CF833C00C4108F /* PRCGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDFAE0D18CF833C00C4108F /* PRCGridView.m */; };
@@ -77,6 +78,7 @@
 		5B49DFF418CE776900DB9322 /* WeightedQuickUnion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightedQuickUnion.h; sourceTree = "<group>"; };
 		5B8698AD18CA3B6900682AF4 /* InsertionSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsertionSortStrategy.cpp; sourceTree = "<group>"; };
 		5B8698AE18CA3B6900682AF4 /* InsertionSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertionSortStrategy.h; sourceTree = "<group>"; };
+		5BBBCC7F18D4CC9D00598800 /* pour.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pour.m4a; sourceTree = "<group>"; };
 		5BC12E9D18C2BFB200D73891 /* SelectionSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionSortStrategy.h; sourceTree = "<group>"; };
 		5BC12EA018C2BFC100D73891 /* SortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortStrategy.h; sourceTree = "<group>"; };
 		5BC12EA218C2C69F00D73891 /* BubbleSortStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleSortStrategy.h; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 		5BF9369B18CE9BB3007DB349 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5BBBCC7F18D4CC9D00598800 /* pour.m4a */,
 				5B22106318D10C6C0098B105 /* AppIcon.png */,
 				5BF9369C18CE9BB3007DB349 /* PercolationGUI-Info.plist */,
 				5BF9369D18CE9BB3007DB349 /* InfoPlist.strings */,
@@ -366,6 +369,7 @@
 				5BF9369F18CE9BB3007DB349 /* InfoPlist.strings in Resources */,
 				5BF936AD18CE9BB3007DB349 /* Images.xcassets in Resources */,
 				5BF936A518CE9BB3007DB349 /* Credits.rtf in Resources */,
+				5BBBCC8018D4CC9E00598800 /* pour.m4a in Resources */,
 				5BF936AB18CE9BB3007DB349 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

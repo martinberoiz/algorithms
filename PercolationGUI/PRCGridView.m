@@ -38,6 +38,7 @@
 {
     
     NSRect boundRect = [self bounds];
+    
     NSRect gridRect;
     if (NSWidth(boundRect) > NSHeight(boundRect)) {
         int xorig = (NSWidth(boundRect) - NSHeight(boundRect))/2;
@@ -53,8 +54,35 @@
                               NSWidth(boundRect));
     }
     
+    
     CGContextRef myContext = [[NSGraphicsContext currentContext] graphicsPort];
 
+    CGContextSetRGBFillColor (myContext, .1, .1, .8, 1);
+    
+    CGFloat shrinkFactor = 0.1;
+    CGRect topRect = CGRectMake(gridRect.origin.x,
+                                gridRect.origin.y,
+                                gridRect.size.width,
+                                gridRect.size.height * shrinkFactor / 2.);
+    
+    CGContextFillRect (myContext, topRect);
+    CGContextStrokeRect(myContext, topRect);
+
+    CGRect bottomRect = CGRectMake(gridRect.origin.x,
+                                   gridRect.origin.y + NSHeight(gridRect) * (1. - shrinkFactor / 2.),
+                                   gridRect.size.width,
+                                   gridRect.size.height * shrinkFactor / 2.);
+    
+    CGContextFillRect (myContext, bottomRect);
+    CGContextStrokeRect(myContext, bottomRect);
+
+
+    //Shrink it a little bit to draw water tower and lake
+    CGFloat channelHeight = gridRect.size.height * 0.1;
+    gridRect.origin.y += channelHeight / 2.;
+    gridRect.size.height -= channelHeight;
+
+    
     for (int i = 0; i < gridSide; i++) {
         int yi = i*gridRect.size.height/gridSide + gridRect.origin.y;
         int yf = (i+1)*gridRect.size.height/gridSide + gridRect.origin.y;
@@ -83,8 +111,8 @@
             }
             int xi = j*gridRect.size.width/gridSide + gridRect.origin.x;
             int xf = (j+1)*gridRect.size.width/gridSide + gridRect.origin.x;
-            CGContextFillRect (myContext, CGRectMake (xi, yi, xf - xi, yf - yi));
-            CGContextStrokeRect(myContext, CGRectMake (xi, yi, xf - xi, yf - yi));
+            CGContextFillRect (myContext, CGRectMake(xi, yi, xf - xi, yf - yi));
+            CGContextStrokeRect(myContext, CGRectMake(xi, yi, xf - xi, yf - yi));
         }
     }
     
