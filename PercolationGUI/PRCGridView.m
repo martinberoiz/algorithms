@@ -8,6 +8,7 @@
 
 #import "PRCGridView.h"
 
+
 @implementation PRCGridView
 
 @synthesize gridSide;
@@ -16,9 +17,10 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        // Initialization code here.
         grid = NULL;
         gridSide = 0;
-        // Initialization code here.
+        viewController = nil;
     }
     return self;
 }
@@ -27,9 +29,14 @@
     grid = newGrid;
 }
 
+-(void)setViewController:(id)aController forSelector:(SEL) aSelector {
+    viewController = aController;
+    isFlooded = aSelector;
+}
+
 - (void)drawRect:(NSRect)dirtyRect
 {
-
+    
     NSRect boundRect = [self bounds];
     NSRect gridRect;
     if (NSWidth(boundRect) > NSHeight(boundRect)) {
@@ -53,8 +60,21 @@
         int yf = (i+1)*gridRect.size.height/gridSide + gridRect.origin.y;
         for (int j = 0; j < gridSide; j++) {
             if (grid != NULL) {
+    
                 if (grid[i][j] == 1) {
-                    CGContextSetRGBFillColor (myContext, .1, .1, .8, 1);
+                    
+                    BOOL flood = NO;
+                    if ([viewController respondsToSelector:isFlooded])
+                        flood = (BOOL)[viewController performSelector: isFlooded
+                                                           withObject: [NSNumber numberWithInt:i]
+                                                           withObject: [NSNumber numberWithInt:j]
+                                       ];
+                    if (flood) {
+                        CGContextSetRGBFillColor (myContext, .1, .1, .8, 1);
+                    } else {
+                        CGContextSetRGBFillColor (myContext, .1, .1, .1, 1);
+                    }
+                    
                 } else {
                     CGContextSetRGBFillColor (myContext, 0.8, 0.8, 0.8, 1);                    
                 }
@@ -68,11 +88,6 @@
         }
     }
     
-    /*NSBezierPath* aLine = [NSBezierPath bezierPath];
-    [aLine moveToPoint:boundRect.origin];
-    [aLine lineToPoint:NSMakePoint(boundRect.origin.x + boundRect.size.width, boundRect.origin.y + boundRect.size.height)];
-    [aLine stroke];*/
-
 }
 
 @end

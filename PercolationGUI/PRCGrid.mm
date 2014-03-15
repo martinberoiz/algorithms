@@ -73,6 +73,14 @@
     return wqu->isConnected(vp1, vp2);
 }
 
+-(BOOL)isConnectedWithTopForRow:(int)row andColumn:(int)col {
+    int site = row * gridSide + col;
+    if (site < gridSize && site >= 0) {
+        return wqu->isConnected(site, vp2);
+    }
+    return NO;
+}
+
 -(unsigned char **)grid {
     return grid;
 }

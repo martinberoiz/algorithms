@@ -22,5 +22,6 @@
 -(void)setGridSide: (int)newGridSide;
 -(unsigned char **)grid;
 -(BOOL)didPercolate;
+-(BOOL)isConnectedWithTopForRow:(int)row andColumn:(int)col;
 
 @end

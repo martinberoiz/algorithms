@@ -28,6 +28,11 @@
     
     isAnimating = NO;
     animationSpeed = 10;
+    
+    //Set self for the view controller
+    [theView setViewController:self forSelector:@selector(isFloodedForRow:andColumn:)];
+    
+    shouldRestart = YES;
 }
 
 -(void)setGridSide:(int)newGridSide {
@@ -41,12 +46,12 @@
     
     [percolateTimer invalidate];
     percolateTimer = nil;
-    percGrid = nil;
+    shouldRestart = YES;
+    
     [startButton setTitle:@"Start Percolation"];
 
     
 }
-
 
 -(void)setAnimationSpeed:(double)newSpeed {
     if (animationSpeed == newSpeed) return;
@@ -68,11 +73,12 @@
         [startButton setTitle:@"Resume Percolation"];
         [percolateTimer invalidate];
         isAnimating = NO;
+        shouldRestart = NO;
         
     } else {
         
         [startButton setTitle:@"Pause Percolation"];
-        if (!percGrid) {
+        if (shouldRestart) {
             percGrid = [[PRCGrid alloc] init];
             [percGrid setGridSide:gridSide];
             grid = [percGrid grid];
@@ -84,6 +90,7 @@
             allSites = (int *)malloc(gridsz*sizeof(*allSites));
             for (int i = 0; i < gridsz; i++) allSites[i] = i;
             lastUsed = 0;
+            shouldRestart = NO;
         }
         
         //Initiate the animation:
@@ -112,10 +119,9 @@
     if ([percGrid didPercolate]) {
         [percolateTimer invalidate];
         percolateTimer = nil;
-        percGrid = nil;
         isAnimating = NO;
         [startButton setTitle:@"Restart Percolation"];
-
+        shouldRestart = YES;
     }
 }
 
@@ -134,6 +140,9 @@
     return retindx;
 }
 
+-(BOOL)isFloodedForRow:(NSNumber*)row andColumn:(NSNumber*)col {
+    return [percGrid isConnectedWithTopForRow:[row intValue] andColumn:[col intValue]];
+}
 
 -(BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
 	return YES;

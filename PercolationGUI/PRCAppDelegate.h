@@ -20,6 +20,7 @@
     bool isAnimating;
     IBOutlet NSButton* startButton;
     double animationSpeed;
+    BOOL shouldRestart;
 }
 
 @property (assign) IBOutlet NSWindow *window;
@@ -27,5 +28,6 @@
 
 -(IBAction)initPercolation:(id)sender;
 -(void)openASite:(NSTimer*)theTimer;
+-(BOOL)isFloodedForRow:(NSNumber*)row andColumn:(NSNumber*)col;
 
 @end

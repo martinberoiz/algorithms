@@ -729,9 +729,9 @@
                                                     </connections>
                                                 </textField>
                                                 <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eFl-sr-1VC">
-                                                    <rect key="frame" x="310" y="52" width="28" height="30"/>
+                                                    <rect key="frame" x="310" y="52" width="32" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="50" doubleValue="10" tickMarkPosition="above" allowsTickMarkValuesOnly="YES" sliderType="circular" id="jxC-WL-5fi"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="20" doubleValue="10" tickMarkPosition="above" numberOfTickMarks="10" sliderType="circular" id="jxC-WL-5fi"/>
                                                     <connections>
                                                         <binding destination="494" name="value" keyPath="animationSpeed" id="hfW-hV-GDr"/>
                                                     </connections>
