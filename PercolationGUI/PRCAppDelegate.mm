@@ -33,6 +33,7 @@
     [theView setViewController:self forSelector:@selector(isFloodedForRow:andColumn:)];
     
     shouldRestart = YES;
+    finalPour = [NSSound soundNamed:@"pour"];
 }
 
 -(void)setGridSide:(int)newGridSide {
@@ -105,8 +106,6 @@
     
 }
 
-
-
 -(void)openASite:(NSTimer*)theTimer {
     
     int site = [self drawOneRandomSite];
@@ -122,6 +121,7 @@
         isAnimating = NO;
         [startButton setTitle:@"Restart Percolation"];
         shouldRestart = YES;
+        [finalPour play];
     }
 }
 

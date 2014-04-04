@@ -11,6 +11,8 @@
 #include "SelectionSortStrategy.h"
 #include "BubbleSortStrategy.h"
 #include "InsertionSortStrategy.h"
+#include "ShellSortStrategy.h"
+#include "MergeSortStrategy.h"
 #include <vector>
 
 using namespace std;
@@ -89,6 +91,10 @@ void iterateOverStrats(T* array, int len)
     allStrats->push_back(bbl);
     InsertionSortStrategy<T>* insrt = new InsertionSortStrategy<T>();
     allStrats->push_back(insrt);
+    ShellSortStrategy<T>* shl = new ShellSortStrategy<T>();
+    allStrats->push_back(shl);
+    MergeSortStrategy<T>* mrg = new MergeSortStrategy<T>();
+    allStrats->push_back(mrg);
     
     for (typename vector<SortStrategy<T>*>::iterator aStrat = allStrats->begin();
          aStrat != allStrats->end();
@@ -102,6 +108,8 @@ void iterateOverStrats(T* array, int len)
     delete sel;
     delete bbl;
     delete insrt;
+    delete shl;
+    delete mrg;
     delete allStrats;
 
 }

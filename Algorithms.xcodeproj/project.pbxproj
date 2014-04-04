@@ -66,6 +66,8 @@
 
 /* Begin PBXFileReference section */
 		5B22106318D10C6C0098B105 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		5B2FCD7718DC9AC500C244E2 /* ShellSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShellSortStrategy.cpp; sourceTree = "<group>"; };
+		5B2FCD7818DC9AC500C244E2 /* ShellSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellSortStrategy.h; sourceTree = "<group>"; };
 		5B49DFD518CE5BEE00DB9322 /* UnionFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnionFind.h; sourceTree = "<group>"; };
 		5B49DFDB18CE5CCE00DB9322 /* UnionFind */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnionFind; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B49DFDF18CE5CCE00DB9322 /* UnionFind.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = UnionFind.1; path = ../UnionFind/UnionFind.1; sourceTree = "<group>"; };
@@ -76,6 +78,8 @@
 		5B49DFEC18CE69F700DB9322 /* QuickUnion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickUnion.h; sourceTree = "<group>"; };
 		5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WeightedQuickUnion.cpp; sourceTree = "<group>"; };
 		5B49DFF418CE776900DB9322 /* WeightedQuickUnion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightedQuickUnion.h; sourceTree = "<group>"; };
+		5B5ECFA018E7124A0047F8E8 /* MergeSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MergeSortStrategy.cpp; sourceTree = "<group>"; };
+		5B5ECFA118E7124A0047F8E8 /* MergeSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSortStrategy.h; sourceTree = "<group>"; };
 		5B8698AD18CA3B6900682AF4 /* InsertionSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsertionSortStrategy.cpp; sourceTree = "<group>"; };
 		5B8698AE18CA3B6900682AF4 /* InsertionSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertionSortStrategy.h; sourceTree = "<group>"; };
 		5BBBCC7F18D4CC9D00598800 /* pour.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pour.m4a; sourceTree = "<group>"; };
@@ -195,6 +199,10 @@
 				5BF90C3C18C2E59B006765A5 /* BubbleSortStrategy.cpp */,
 				5B8698AE18CA3B6900682AF4 /* InsertionSortStrategy.h */,
 				5B8698AD18CA3B6900682AF4 /* InsertionSortStrategy.cpp */,
+				5B2FCD7818DC9AC500C244E2 /* ShellSortStrategy.h */,
+				5B2FCD7718DC9AC500C244E2 /* ShellSortStrategy.cpp */,
+				5B5ECFA118E7124A0047F8E8 /* MergeSortStrategy.h */,
+				5B5ECFA018E7124A0047F8E8 /* MergeSortStrategy.cpp */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";

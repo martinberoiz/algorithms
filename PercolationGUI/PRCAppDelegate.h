@@ -21,6 +21,8 @@
     IBOutlet NSButton* startButton;
     double animationSpeed;
     BOOL shouldRestart;
+    
+    NSSound* finalPour;
 }
 
 @property (assign) IBOutlet NSWindow *window;

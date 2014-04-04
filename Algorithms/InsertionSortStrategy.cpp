@@ -17,7 +17,7 @@ template <class T> void InsertionSortStrategy<T>::sort(T* array, int len) {
         insert(array, i, j);
     }
     return;
-};
+}
 
 
 template <class T> void InsertionSortStrategy<T>::insert(T* a, int i, int j) {
@@ -26,3 +26,13 @@ template <class T> void InsertionSortStrategy<T>::insert(T* a, int i, int j) {
     a[j] = temp;
 }
 
+
+/*
+for (int ind = 1; ind < len; ind++) {
+    for (int i = ind; i > 0; i--) {
+        if (array[i] < array[i-1]) {
+            swap(array, i, i-1);
+        } else break;
+    }
+}
+*/
