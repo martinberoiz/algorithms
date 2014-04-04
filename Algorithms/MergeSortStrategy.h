@@ -24,7 +24,8 @@ public:
 
 private:
     void merge(T* arrayPointer, int len1, int len2);
-    std::vector<T>* workArray;
+    std::vector<T>* workVector;
+    T* workArray;
 };
 
 #include "MergeSortStrategy.cpp"
