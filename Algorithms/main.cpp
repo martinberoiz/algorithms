@@ -60,10 +60,7 @@ bool sorttest(T* array, int len, SortStrategy<T>* aStrat)
     cout << "After sorting with " << aStrat->methodName() << endl;
     printArray(array, len);
     
-    for (int i = 0; i < len - 1; i++) {
-        if (array[i] > array[i + 1]) return false;
-    }
-    return true;
+    return aStrat->isSorted(array, len);
     
 }
 
