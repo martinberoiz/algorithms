@@ -24,6 +24,7 @@ public:
 
 private:
     void merge(T* arrayPointer, int len1, int len2);
+    void insertSort(T* array, int len);
     std::vector<T>* workVector;
     T* workArray;
 };

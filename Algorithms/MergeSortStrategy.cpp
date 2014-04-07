@@ -30,7 +30,18 @@ template <class T> void MergeSortStrategy<T>::topDownSort(T* array, int len) {
     return;
 }
 
+
+#define MIN_ARRAY_LEN 0
 template <class T> void MergeSortStrategy<T>::merge(T* arrayPointer, int len1, int len2) {
+    
+    //Check if it's already sorted
+    if (arrayPointer[len1 - 1] < arrayPointer[len1]) return;
+    
+    //Do an insertion sort for small arrays
+    if (len1 + len2 < MIN_ARRAY_LEN) {
+        insertSort(arrayPointer, len1 + len2);
+        return;
+    }
     
     memcpy(workArray, arrayPointer, (len1 + len2) * sizeof(T));
     
@@ -55,4 +66,16 @@ template <class T> void MergeSortStrategy<T>::merge(T* arrayPointer, int len1, i
     }
     
 }
+#undef MIN_ARRAY_LEN
 
+template <class T> void MergeSortStrategy<T>::insertSort(T* array, int len) {
+    for (int ind = 1; ind < len; ind++) {
+        for (int i = ind; i > 0; i--) {
+            if (array[i] < array[i-1]) {
+                T temp = array[i];
+                array[i] = array[i-1];
+                array[i-1] = temp;
+            } else break;
+        }
+    }
+}
