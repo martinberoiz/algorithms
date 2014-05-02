@@ -20,12 +20,12 @@ public:
     ~MergeSortStrategy();
     void sort(T* array, int len);
     std::string methodName() {return std::string("Merge Sort");}
-    void topDownSort(T* array, int len);
 
 private:
+    void topDownSort(T* array, int len);
+    void bottomUpSort(T* array, int len);
     void merge(T* arrayPointer, int len1, int len2);
     void insertSort(T* array, int len);
-    std::vector<T>* workVector;
     T* workArray;
 };
 

@@ -55,7 +55,7 @@ int main(int argc, const char * argv[])
 template <typename T>
 bool sorttest(T* array, int len, SortStrategy<T>* aStrat)
 {
-    aStrat->sort(array, 10);
+    aStrat->sort(array, len);
     
     cout << "After sorting with " << aStrat->methodName() << endl;
     printArray(array, len);

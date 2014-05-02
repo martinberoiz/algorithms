@@ -11,6 +11,7 @@ template <class T> MergeSortStrategy<T>::MergeSortStrategy() {
     workArray = NULL;
 }
 
+
 template <class T> MergeSortStrategy<T>::~MergeSortStrategy() {
     if (workArray) free(workArray);
 }
@@ -18,16 +19,37 @@ template <class T> MergeSortStrategy<T>::~MergeSortStrategy() {
 
 template <class T> void MergeSortStrategy<T>::sort(T* array, int len) {
     workArray = (T*)malloc(len*sizeof(T));
-    topDownSort(array, len);
+    //topDownSort(array, len);
+    bottomUpSort(array, len);
 }
 
+
 template <class T> void MergeSortStrategy<T>::topDownSort(T* array, int len) {
-    
     if (len < 2) return;
     topDownSort(array, len/2);
     topDownSort(array + len/2, len/2 + len%2);
     merge(array, len/2, len/2 + len%2);
     return;
+}
+
+
+template <class T> void MergeSortStrategy<T>::bottomUpSort(T* array, int len) {
+    int sublen;
+    for (sublen = 1; sublen < len; sublen *= 2) {
+        int shift;
+        //Merge all pair of sublens
+        for (shift = 0; shift < len - 2*sublen + 1; shift += 2*sublen) {
+            merge(array + shift, sublen, sublen);
+        }
+        //If there's a sublen + a remainder to merge, merge it
+        if (len % 2*sublen > sublen) {
+            merge(array + shift, sublen, len % sublen);
+        }
+    }
+    //Now merge whatever is left
+    sublen /= 2;
+    if (len % sublen != 0) merge(array, sublen, len % sublen);
+    
 }
 
 
@@ -68,6 +90,7 @@ template <class T> void MergeSortStrategy<T>::merge(T* arrayPointer, int len1, i
 }
 #undef MIN_ARRAY_LEN
 
+
 template <class T> void MergeSortStrategy<T>::insertSort(T* array, int len) {
     for (int ind = 1; ind < len; ind++) {
         for (int i = ind; i > 0; i--) {
@@ -79,3 +102,6 @@ template <class T> void MergeSortStrategy<T>::insertSort(T* array, int len) {
         }
     }
 }
+
+
+
