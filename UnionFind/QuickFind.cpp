@@ -33,3 +33,4 @@ bool QuickFind::isConnected(int p, int q) {
     }
     return false;
 }
+

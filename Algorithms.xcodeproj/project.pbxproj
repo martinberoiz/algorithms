@@ -9,17 +9,20 @@
 /* Begin PBXBuildFile section */
 		5B22106418D10C6C0098B105 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B22106318D10C6C0098B105 /* AppIcon.png */; };
 		5B49DFE018CE5CCE00DB9322 /* UnionFind.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5B49DFDF18CE5CCE00DB9322 /* UnionFind.1 */; };
-		5B49DFE618CE5D0D00DB9322 /* ufTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFE418CE5CF800DB9322 /* ufTest.cpp */; };
-		5B49DFEE18CE6F7B00DB9322 /* QuickFind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFE718CE5D6C00DB9322 /* QuickFind.cpp */; };
-		5B49DFEF18CE6F7E00DB9322 /* QuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFEB18CE69F700DB9322 /* QuickUnion.cpp */; };
-		5B49DFF618CE77DC00DB9322 /* WeightedQuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */; };
+		5B95B3DA191D3BD100F3A155 /* ufTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B95B3D8191D3A9B00F3A155 /* ufTest.cpp */; };
+		5B95B3DB191D3C7900F3A155 /* QuickFind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B95B3CC191D35B800F3A155 /* QuickFind.cpp */; };
+		5B95B3DC191D3C7B00F3A155 /* QuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B95B3CE191D35B800F3A155 /* QuickUnion.cpp */; };
+		5B95B3DD191D3C7E00F3A155 /* WeightedQuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B95B3D1191D35B800F3A155 /* WeightedQuickUnion.cpp */; };
+		5B95B3DE191D3C8E00F3A155 /* percolation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B95B3D6191D39B400F3A155 /* percolation.cpp */; };
+		5B95B3DF191D3CA100F3A155 /* QuickFind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B95B3CC191D35B800F3A155 /* QuickFind.cpp */; };
+		5B95B3E0191D3CA300F3A155 /* QuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B95B3CE191D35B800F3A155 /* QuickUnion.cpp */; };
+		5B95B3E1191D3CA600F3A155 /* WeightedQuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B95B3D1191D35B800F3A155 /* WeightedQuickUnion.cpp */; };
+		5B95B3E2191D3CCD00F3A155 /* WeightedQuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B95B3D1191D35B800F3A155 /* WeightedQuickUnion.cpp */; };
 		5BBBCC8018D4CC9E00598800 /* pour.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5BBBCC7F18D4CC9D00598800 /* pour.m4a */; };
 		5BD0735718C0F467002D3134 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0735618C0F467002D3134 /* main.cpp */; };
 		5BD0735918C0F467002D3134 /* Algorithms.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5BD0735818C0F467002D3134 /* Algorithms.1 */; };
 		5BDFAE0E18CF833C00C4108F /* PRCGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDFAE0D18CF833C00C4108F /* PRCGridView.m */; };
 		5BF9368818CE8391007DB349 /* Percolation.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5BF9368718CE8391007DB349 /* Percolation.1 */; };
-		5BF9368C18CE83A2007DB349 /* percolation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BF9367D18CE8379007DB349 /* percolation.cpp */; };
-		5BF9368D18CE8461007DB349 /* WeightedQuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */; };
 		5BF9369518CE9BB3007DB349 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF9369418CE9BB3007DB349 /* Cocoa.framework */; };
 		5BF9369F18CE9BB3007DB349 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BF9369D18CE9BB3007DB349 /* InfoPlist.strings */; };
 		5BF936A118CE9BB3007DB349 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF936A018CE9BB3007DB349 /* main.m */; };
@@ -28,7 +31,6 @@
 		5BF936AB18CE9BB3007DB349 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF936A918CE9BB3007DB349 /* MainMenu.xib */; };
 		5BF936AD18CE9BB3007DB349 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF936AC18CE9BB3007DB349 /* Images.xcassets */; };
 		5BF936C818CE9C0D007DB349 /* PRCGrid.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5BF936C718CE9C0D007DB349 /* PRCGrid.mm */; };
-		5BF936C918CE9E72007DB349 /* WeightedQuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,20 +70,21 @@
 		5B22106318D10C6C0098B105 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		5B2FCD7718DC9AC500C244E2 /* ShellSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShellSortStrategy.cpp; sourceTree = "<group>"; };
 		5B2FCD7818DC9AC500C244E2 /* ShellSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellSortStrategy.h; sourceTree = "<group>"; };
-		5B49DFD518CE5BEE00DB9322 /* UnionFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnionFind.h; sourceTree = "<group>"; };
 		5B49DFDB18CE5CCE00DB9322 /* UnionFind */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnionFind; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B49DFDF18CE5CCE00DB9322 /* UnionFind.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = UnionFind.1; path = ../UnionFind/UnionFind.1; sourceTree = "<group>"; };
-		5B49DFE418CE5CF800DB9322 /* ufTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ufTest.cpp; sourceTree = "<group>"; };
-		5B49DFE718CE5D6C00DB9322 /* QuickFind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickFind.cpp; sourceTree = "<group>"; };
-		5B49DFE818CE5D6C00DB9322 /* QuickFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickFind.h; sourceTree = "<group>"; };
-		5B49DFEB18CE69F700DB9322 /* QuickUnion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUnion.cpp; sourceTree = "<group>"; };
-		5B49DFEC18CE69F700DB9322 /* QuickUnion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickUnion.h; sourceTree = "<group>"; };
-		5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WeightedQuickUnion.cpp; sourceTree = "<group>"; };
-		5B49DFF418CE776900DB9322 /* WeightedQuickUnion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightedQuickUnion.h; sourceTree = "<group>"; };
 		5B5ECFA018E7124A0047F8E8 /* MergeSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MergeSortStrategy.cpp; sourceTree = "<group>"; };
 		5B5ECFA118E7124A0047F8E8 /* MergeSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSortStrategy.h; sourceTree = "<group>"; };
 		5B8698AD18CA3B6900682AF4 /* InsertionSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InsertionSortStrategy.cpp; sourceTree = "<group>"; };
 		5B8698AE18CA3B6900682AF4 /* InsertionSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertionSortStrategy.h; sourceTree = "<group>"; };
+		5B95B3CC191D35B800F3A155 /* QuickFind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = QuickFind.cpp; path = UnionFind/QuickFind.cpp; sourceTree = SOURCE_ROOT; };
+		5B95B3CD191D35B800F3A155 /* QuickFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuickFind.h; path = UnionFind/QuickFind.h; sourceTree = SOURCE_ROOT; };
+		5B95B3CE191D35B800F3A155 /* QuickUnion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = QuickUnion.cpp; path = UnionFind/QuickUnion.cpp; sourceTree = SOURCE_ROOT; };
+		5B95B3CF191D35B800F3A155 /* QuickUnion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuickUnion.h; path = UnionFind/QuickUnion.h; sourceTree = SOURCE_ROOT; };
+		5B95B3D0191D35B800F3A155 /* UnionFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnionFind.h; path = UnionFind/UnionFind.h; sourceTree = SOURCE_ROOT; };
+		5B95B3D1191D35B800F3A155 /* WeightedQuickUnion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WeightedQuickUnion.cpp; path = UnionFind/WeightedQuickUnion.cpp; sourceTree = SOURCE_ROOT; };
+		5B95B3D2191D35B800F3A155 /* WeightedQuickUnion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeightedQuickUnion.h; path = UnionFind/WeightedQuickUnion.h; sourceTree = SOURCE_ROOT; };
+		5B95B3D6191D39B400F3A155 /* percolation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = percolation.cpp; sourceTree = "<group>"; };
+		5B95B3D8191D3A9B00F3A155 /* ufTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ufTest.cpp; path = UnionFind/ufTest.cpp; sourceTree = SOURCE_ROOT; };
 		5BBBCC7F18D4CC9D00598800 /* pour.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pour.m4a; sourceTree = "<group>"; };
 		5BC12E9D18C2BFB200D73891 /* SelectionSortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionSortStrategy.h; sourceTree = "<group>"; };
 		5BC12EA018C2BFC100D73891 /* SortStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortStrategy.h; sourceTree = "<group>"; };
@@ -93,7 +96,6 @@
 		5BDFAE0D18CF833C00C4108F /* PRCGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRCGridView.m; sourceTree = "<group>"; };
 		5BF90C3918C2E4FA006765A5 /* SelectionSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectionSortStrategy.cpp; sourceTree = "<group>"; };
 		5BF90C3C18C2E59B006765A5 /* BubbleSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BubbleSortStrategy.cpp; sourceTree = "<group>"; };
-		5BF9367D18CE8379007DB349 /* percolation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = percolation.cpp; path = ../Algorithms/percolation.cpp; sourceTree = "<group>"; };
 		5BF9368318CE8391007DB349 /* Percolation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Percolation; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF9368718CE8391007DB349 /* Percolation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Percolation.1; sourceTree = "<group>"; };
 		5BF9369218CE9BB3007DB349 /* Percolation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Percolation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,24 +153,26 @@
 		5B49DFD318CE5BD100DB9322 /* Union Find */ = {
 			isa = PBXGroup;
 			children = (
-				5B49DFE418CE5CF800DB9322 /* ufTest.cpp */,
+				5B95B3D8191D3A9B00F3A155 /* ufTest.cpp */,
+				5B95B3CC191D35B800F3A155 /* QuickFind.cpp */,
+				5B95B3CD191D35B800F3A155 /* QuickFind.h */,
+				5B95B3CE191D35B800F3A155 /* QuickUnion.cpp */,
+				5B95B3CF191D35B800F3A155 /* QuickUnion.h */,
+				5B95B3D0191D35B800F3A155 /* UnionFind.h */,
+				5B95B3D1191D35B800F3A155 /* WeightedQuickUnion.cpp */,
+				5B95B3D2191D35B800F3A155 /* WeightedQuickUnion.h */,
 				5B49DFDF18CE5CCE00DB9322 /* UnionFind.1 */,
-				5B49DFD518CE5BEE00DB9322 /* UnionFind.h */,
-				5B49DFE818CE5D6C00DB9322 /* QuickFind.h */,
-				5B49DFE718CE5D6C00DB9322 /* QuickFind.cpp */,
-				5B49DFEC18CE69F700DB9322 /* QuickUnion.h */,
-				5B49DFEB18CE69F700DB9322 /* QuickUnion.cpp */,
-				5B49DFF418CE776900DB9322 /* WeightedQuickUnion.h */,
-				5B49DFF318CE776900DB9322 /* WeightedQuickUnion.cpp */,
-				5BF9368418CE8391007DB349 /* Percolation */,
 			);
 			name = "Union Find";
+			path = Algorithms;
 			sourceTree = "<group>";
 		};
 		5BD0734A18C0F467002D3134 = {
 			isa = PBXGroup;
 			children = (
 				5BD0735518C0F467002D3134 /* Algorithms */,
+				5B49DFD318CE5BD100DB9322 /* Union Find */,
+				5BF9368418CE8391007DB349 /* Percolation */,
 				5BF9369A18CE9BB3007DB349 /* PercolationGUI */,
 				5BF9369318CE9BB3007DB349 /* Frameworks */,
 				5BD0735418C0F467002D3134 /* Products */,
@@ -189,9 +193,7 @@
 		5BD0735518C0F467002D3134 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				5B49DFD318CE5BD100DB9322 /* Union Find */,
 				5BD0735618C0F467002D3134 /* main.cpp */,
-				5BD0735818C0F467002D3134 /* Algorithms.1 */,
 				5BC12EA018C2BFC100D73891 /* SortStrategy.h */,
 				5BC12E9D18C2BFB200D73891 /* SelectionSortStrategy.h */,
 				5BF90C3918C2E4FA006765A5 /* SelectionSortStrategy.cpp */,
@@ -203,6 +205,7 @@
 				5B2FCD7718DC9AC500C244E2 /* ShellSortStrategy.cpp */,
 				5B5ECFA118E7124A0047F8E8 /* MergeSortStrategy.h */,
 				5B5ECFA018E7124A0047F8E8 /* MergeSortStrategy.cpp */,
+				5BD0735818C0F467002D3134 /* Algorithms.1 */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -210,11 +213,10 @@
 		5BF9368418CE8391007DB349 /* Percolation */ = {
 			isa = PBXGroup;
 			children = (
-				5BF9367D18CE8379007DB349 /* percolation.cpp */,
+				5B95B3D6191D39B400F3A155 /* percolation.cpp */,
 				5BF9368718CE8391007DB349 /* Percolation.1 */,
 			);
-			name = Percolation;
-			path = ../Percolation;
+			path = Percolation;
 			sourceTree = "<group>";
 		};
 		5BF9369318CE9BB3007DB349 /* Frameworks */ = {
@@ -389,10 +391,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B49DFEE18CE6F7B00DB9322 /* QuickFind.cpp in Sources */,
-				5B49DFF618CE77DC00DB9322 /* WeightedQuickUnion.cpp in Sources */,
-				5B49DFEF18CE6F7E00DB9322 /* QuickUnion.cpp in Sources */,
-				5B49DFE618CE5D0D00DB9322 /* ufTest.cpp in Sources */,
+				5B95B3DD191D3C7E00F3A155 /* WeightedQuickUnion.cpp in Sources */,
+				5B95B3DA191D3BD100F3A155 /* ufTest.cpp in Sources */,
+				5B95B3DB191D3C7900F3A155 /* QuickFind.cpp in Sources */,
+				5B95B3DC191D3C7B00F3A155 /* QuickUnion.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +410,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF9368C18CE83A2007DB349 /* percolation.cpp in Sources */,
-				5BF9368D18CE8461007DB349 /* WeightedQuickUnion.cpp in Sources */,
+				5B95B3DE191D3C8E00F3A155 /* percolation.cpp in Sources */,
+				5B95B3DF191D3CA100F3A155 /* QuickFind.cpp in Sources */,
+				5B95B3E0191D3CA300F3A155 /* QuickUnion.cpp in Sources */,
+				5B95B3E1191D3CA600F3A155 /* WeightedQuickUnion.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,10 +422,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDFAE0E18CF833C00C4108F /* PRCGridView.m in Sources */,
-				5BF936C918CE9E72007DB349 /* WeightedQuickUnion.cpp in Sources */,
 				5BF936A818CE9BB3007DB349 /* PRCAppDelegate.mm in Sources */,
 				5BF936C818CE9C0D007DB349 /* PRCGrid.mm in Sources */,
 				5BF936A118CE9BB3007DB349 /* main.m in Sources */,
+				5B95B3E2191D3CCD00F3A155 /* WeightedQuickUnion.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
