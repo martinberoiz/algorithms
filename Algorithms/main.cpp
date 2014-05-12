@@ -14,6 +14,7 @@
 #include "ShellSortStrategy.h"
 #include "MergeSortStrategy.h"
 #include <vector>
+#include <cstring>
 
 using namespace std;
 
@@ -24,6 +25,13 @@ template <typename T> void iterateOverStrats(T* data, int lendata);
 
 int main(int argc, const char * argv[])
 {
+    if (argc > 1) {
+        if (strcmp(argv[0], "--version")) {
+            printf("Version 0.1.1\n");
+            return 0;
+        }
+    }
+    
     double data_dbl[10];
     int lendata_dbl = 10;
     

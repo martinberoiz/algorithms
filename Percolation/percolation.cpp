@@ -8,10 +8,18 @@
 
 #include <stdio.h>
 #include "WeightedQuickUnion.h"
+#include <cstring>
 
 int drawOneRandomSite(int* grid, int gside, int& lastUsed);
 
 int main() {
+    if (argc > 1) {
+        if (strcmp(argv[0], "--version")) {
+            printf("Version 0.1.1\n");
+            return 0;
+        }
+    }
+
     int gside = 100;
     int gridsz = gside * gside;
     WeightedQuickUnion wqu(gridsz + 2);

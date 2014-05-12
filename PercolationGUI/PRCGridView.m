@@ -92,11 +92,19 @@
                 if (grid[i][j] == 1) {
                     
                     BOOL flood = NO;
-                    if ([viewController respondsToSelector:isFlooded])
-                        flood = (BOOL)[viewController performSelector: isFlooded
+                    if ([viewController respondsToSelector:isFlooded]) {
+                        
+                        IMP imp = [viewController methodForSelector:isFlooded];
+                        BOOL (*checkIfFlooded)(id, SEL, NSNumber*, NSNumber*) = (void *)imp;
+                        flood = checkIfFlooded(viewController,
+                                               isFlooded,
+                                               [NSNumber numberWithInt:i],
+                                               [NSNumber numberWithInt:i]);
+                        /*flood = (BOOL)[viewController performSelector: isFlooded
                                                            withObject: [NSNumber numberWithInt:i]
                                                            withObject: [NSNumber numberWithInt:j]
-                                       ];
+                                       ];*/
+                    }
                     if (flood) {
                         CGContextSetRGBFillColor (myContext, .1, .1, .8, 1);
                     } else {
