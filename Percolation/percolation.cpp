@@ -12,7 +12,7 @@
 
 int drawOneRandomSite(int* grid, int gside, int& lastUsed);
 
-int main() {
+int main(int argc, char *argv[]) {
     if (argc > 1) {
         if (strcmp(argv[0], "--version")) {
             printf("Version 0.1.1\n");

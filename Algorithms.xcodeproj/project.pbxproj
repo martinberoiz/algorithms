@@ -115,6 +115,7 @@
 		5BF936B318CE9BB3007DB349 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5BF936C618CE9C0D007DB349 /* PRCGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRCGrid.h; sourceTree = "<group>"; };
 		5BF936C718CE9C0D007DB349 /* PRCGrid.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PRCGrid.mm; sourceTree = "<group>"; };
+		AEE697D51928263E005E774B /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +171,7 @@
 		5BD0734A18C0F467002D3134 = {
 			isa = PBXGroup;
 			children = (
+				AEE697D51928263E005E774B /* makefile */,
 				5BD0735518C0F467002D3134 /* Algorithms */,
 				5B49DFD318CE5BD100DB9322 /* Union Find */,
 				5BF9368418CE8391007DB349 /* Percolation */,
