@@ -60,32 +60,33 @@
     CGContextSetRGBFillColor (myContext, .1, .1, .8, 1);
     
     CGFloat shrinkFactor = 0.1;
-    CGRect topRect = CGRectMake(gridRect.origin.x,
-                                gridRect.origin.y,
-                                gridRect.size.width,
-                                gridRect.size.height * shrinkFactor / 2.);
-    
-    CGContextFillRect (myContext, topRect);
-    CGContextStrokeRect(myContext, topRect);
-
     CGRect bottomRect = CGRectMake(gridRect.origin.x,
-                                   gridRect.origin.y + NSHeight(gridRect) * (1. - shrinkFactor / 2.),
+                                   gridRect.origin.y,
                                    gridRect.size.width,
                                    gridRect.size.height * shrinkFactor / 2.);
     
     CGContextFillRect (myContext, bottomRect);
     CGContextStrokeRect(myContext, bottomRect);
 
+    CGRect topRect = CGRectMake(gridRect.origin.x,
+                                gridRect.origin.y + NSHeight(gridRect) * (1. - shrinkFactor / 2.),
+                                gridRect.size.width,
+                                gridRect.size.height * shrinkFactor / 2.);
+    
+    CGContextFillRect (myContext, topRect);
+    CGContextStrokeRect(myContext, topRect);
 
-    //Shrink it a little bit to draw water tower and lake
+
+    //Shrink the whole grid a little bit to draw water tower and lake
     CGFloat channelHeight = gridRect.size.height * 0.1;
     gridRect.origin.y += channelHeight / 2.;
     gridRect.size.height -= channelHeight;
 
     
     for (int i = 0; i < gridSide; i++) {
-        int yi = i*gridRect.size.height/gridSide + gridRect.origin.y;
-        int yf = (i+1)*gridRect.size.height/gridSide + gridRect.origin.y;
+        int yi = gridRect.size.height*(1. - (double)i/(double)gridSide) + gridRect.origin.y;
+        int yf = gridRect.size.height*(1. - (double)(i + 1)/(double)gridSide) + gridRect.origin.y;
+        //int yf = (i+1)*gridRect.size.height/gridSide + gridRect.origin.y;
         for (int j = 0; j < gridSide; j++) {
             if (grid != NULL) {
     
@@ -99,7 +100,7 @@
                         flood = checkIfFlooded(viewController,
                                                isFlooded,
                                                [NSNumber numberWithInt:i],
-                                               [NSNumber numberWithInt:i]);
+                                               [NSNumber numberWithInt:j]);
                         /*flood = (BOOL)[viewController performSelector: isFlooded
                                                            withObject: [NSNumber numberWithInt:i]
                                                            withObject: [NSNumber numberWithInt:j]

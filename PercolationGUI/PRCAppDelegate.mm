@@ -17,7 +17,7 @@
 {
     // Insert code here to initialize your application
     [self willChangeValueForKey:@"gridSide"];
-    gridSide = 10;
+    gridSide = 4;
     [self didChangeValueForKey:@"gridSide"];
     grid = NULL;
     [theView setGrid:grid];
@@ -27,7 +27,7 @@
     allSites = NULL;
     
     isAnimating = NO;
-    animationSpeed = 10;
+    animationSpeed = 1.;
     
     //Set self for the view controller
     [theView setViewController:self forSelector:@selector(isFloodedForRow:andColumn:)];

@@ -13,7 +13,7 @@
 -(id)init {
     grid = NULL;
     nopenings = 0;
-    vp1 = vp2 = 0;
+    vp_top = vp_bottom = 0;
     return self;
 }
 
@@ -34,13 +34,13 @@
     
     //Connect here top and bottom virtual points
     //virtual endpoints will be gridsz and gridsz + 1
-    vp1 = gridSize;
-    vp2 = gridSize + 1;
+    vp_top = gridSize;
+    vp_bottom = gridSize + 1;
     for (int i = 0; i < gridSide; i++) {
-        wqu->connect(vp1, i);
+        wqu->connect(vp_top, i);
     }
     for (int i = gridSide*(gridSide - 1); i < gridSize; i++) {
-        wqu->connect(vp2, i);
+        wqu->connect(vp_bottom, i);
     }
 
 };
@@ -70,13 +70,13 @@
 }
 
 -(BOOL)didPercolate {
-    return wqu->isConnected(vp1, vp2);
+    return wqu->isConnected(vp_top, vp_bottom);
 }
 
 -(BOOL)isConnectedWithTopForRow:(int)row andColumn:(int)col {
     int site = row * gridSide + col;
     if (site < gridSize && site >= 0) {
-        return wqu->isConnected(site, vp2);
+        return wqu->isConnected(site, vp_top);
     }
     return NO;
 }

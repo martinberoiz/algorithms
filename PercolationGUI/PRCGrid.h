@@ -15,7 +15,7 @@
     WeightedQuickUnion* wqu;
     unsigned char** grid;
     int nopenings;
-    int vp1, vp2;
+    int vp_top, vp_bottom;
 }
 
 -(void)openSiteAtRow: (int)row andColumn: (int)col;
