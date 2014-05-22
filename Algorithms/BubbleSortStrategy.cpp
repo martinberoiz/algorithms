@@ -1,14 +1,13 @@
 //
-//  BubbleSortStrategy.h
+//  BubbleSortStrategy.cpp
 //  Algorithms
 //
 //  Created by Martin Beroiz on 3/1/14.
 //  Copyright (c) 2014 CGWA. All rights reserved.
 //
 
-#include "BubbleSortStrategy.h"    
 
-void BubbleSortStrategy::sort(double* array, int len) {
+template <class T> void BubbleSortStrategy<T>::sort(T* array, int len) {
     bool swapflag = true;
     for (int n = len; swapflag == true; n--) {
         swapflag = false;
@@ -20,4 +19,3 @@ void BubbleSortStrategy::sort(double* array, int len) {
         }
     }
 }
-

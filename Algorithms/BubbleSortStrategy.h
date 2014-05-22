@@ -12,28 +12,12 @@
 #include "SortStrategy.h"
 #include <string>
 
-class BubbleSortStrategy : public SortStrategy {
+template <class T> class BubbleSortStrategy : public SortStrategy<T> {
 public:
-    std::string methodName() {return "Bubble Sort";}
-    //int methodName() {return 2;}
-
-    void sort(double* array, int len = 0);/* {
-        bool swapflag = true;
-        for (int n = len; swapflag == true; n--) {
-            swapflag = false;
-            for (int i = 0; i < n - 1; i++) {
-                if (array[i] > array[i + 1]) {
-                    swap(array, i, i + 1);
-                    swapflag = true;
-                }
-            }
-        }
-    }*/
-    
-
+    std::string methodName() {return std::string("Bubble Sort");}
+    void sort(T* array, int len = 0);
 
 private:
-    template <typename T>
     void swap(T* data, int ind1, int ind2) {
         T temp = data[ind1];
         data[ind1] = data[ind2];
@@ -41,5 +25,7 @@ private:
     }
 
 };
+
+#include "BubbleSortStrategy.cpp"
 
 #endif
