@@ -26,7 +26,7 @@ template <typename T> void iterateOverStrats(T* data, int lendata);
 int main(int argc, const char * argv[])
 {
     if (argc > 1) {
-        if (strcmp(argv[0], "--version")) {
+        if (strcmp(argv[1], "--version")) {
             printf("Version 0.1.1\n");
             return 0;
         }

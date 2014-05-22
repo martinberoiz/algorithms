@@ -38,20 +38,21 @@
 
 -(void)setGridSide:(int)newGridSide {
     if (gridSide == newGridSide) return;
+    if (newGridSide < 4 || newGridSide > 100) return;
     
+    [percolateTimer invalidate];
+    percolateTimer = nil;
+    isAnimating = NO;
+    shouldRestart = YES;
+
     gridSide = newGridSide;
-    grid = NULL;
+    
     [theView setGrid:NULL];
     [theView setGridSide:gridSide];
     [theView setNeedsDisplay:YES];
     
-    [percolateTimer invalidate];
-    percolateTimer = nil;
-    shouldRestart = YES;
-    
     [startButton setTitle:@"Start Percolation"];
 
-    
 }
 
 -(void)setAnimationSpeed:(double)newSpeed {
@@ -119,9 +120,10 @@
         [percolateTimer invalidate];
         percolateTimer = nil;
         isAnimating = NO;
-        [startButton setTitle:@"Restart Percolation"];
+        [startButton setTitle:@"Start Percolation"];
         shouldRestart = YES;
         [finalPour play];
+        
     }
 }
 
