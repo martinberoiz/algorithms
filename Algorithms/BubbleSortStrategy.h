@@ -12,6 +12,7 @@
 #include "SortStrategy.h"
 #include <string>
 
+// Standard Bubble Sort sorting algorithm using swap method
 template <class T> class BubbleSortStrategy : public SortStrategy<T> {
 public:
     std::string methodName() {return std::string("Bubble Sort");}
