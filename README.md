@@ -17,5 +17,6 @@ structures.
 These algorithms are the ones usually taught in
 Algorithms courses in CS.
 
+This was done in conjunction with Marc Normandin.
 
 Version 0.1.1
