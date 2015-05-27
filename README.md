@@ -17,6 +17,6 @@ structures.
 These algorithms are the ones usually taught in
 Algorithms courses in CS.
 
-This was done in conjunction with Marc Normandin.
+> Part of the physics computer science lab at the University of Texas at Brownsville.
 
 Version 0.1.1
