@@ -11,7 +11,7 @@ email: <martinberoiz@phys.utb.edu>
 
 --------
 
-> This repository will contain C++ programs that will
+> This repository will contain C++ programs that
 implement common basic sorting algorithms and data
 structures.
 These algorithms are the ones usually taught in
